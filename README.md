@@ -1,4 +1,4 @@
-## MekongDeltaMDP
+# MekongDeltaMDP
 
 Data processing and analysis for MDP425: coastal erosion, mangroves and breakwaters along the coast of Can Tho and Ca Mau (former Sóc Trăng and Bạc Liêu), Mekong Delta, Vietnam (Vinh Chau – Lai Hoa – Nha Mat).
 
@@ -33,7 +33,7 @@ Not all data are in this repository. Some are restricted or too large, and are l
 | Folder | Data | Owner / source | In this repository? |
 |---|---|---|---|
 | `hydro/` | Field data June 2025 and June 2026 | Thuyloi University (collected by Dr. Hoang Tung Dao) | No, restricted |
-| `hydro/` | Field data October 2026 | Thuyloi University (contact: Dr. P.H. Hung) | No, restricted |
+| `hydro/` | Field data October 2026 | ICOE | No, restricted |
 | `hydro/` | ERA5 and IBTrACS | Copernicus Climate Change Service; NOAA (open data) | Yes |
 | `shoreline_monitor/` | Shoreline Monitor v2.1 | Deltares | No, downloaded with `data_collection.ipynb` (needs a Deltares SAS token in `.env`) |
 | `mangrove_analysis/` | Google Earth Engine output | Landsat: USGS; Sentinel-2: Copernicus (open data) | Yes (Esri background images are not) |
@@ -43,4 +43,4 @@ Not all data are in this repository. Some are restricted or too large, and are l
 
 The restricted data are not ours to share; ask the owner for access. With data in the same structure, the notebooks can be used to repeat the analysis for new measurements.
 
-See the README in each folder for the input files, settings, assumptions and outputs.
+See the README in each folder for the input files, settings, assumptions and outputs.folder for the input files, settings, assumptions and outputs.
