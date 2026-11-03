@@ -1,4 +1,4 @@
-# MekongDeltaMDP
+## MekongDeltaMDP
 
 Data processing and analysis for MDP425: coastal erosion, mangroves and breakwaters along the coast of Can Tho and Ca Mau (former Sóc Trăng and Bạc Liêu), Mekong Delta, Vietnam (Vinh Chau – Lai Hoa – Nha Mat).
 
@@ -6,10 +6,11 @@ Each folder is a separate analysis with its own README, and the same structure: 
 
 | Folder | What it does | Main notebook(s) |
 |---|---|---|
-| [`hydrology/`](hydrology/) | Field campaigns (June 2025, June 2026, Oct 2026): waves, water levels, currents, inundation and wave transformation offshore → mudflat; ERA5 storm and long-term wave and wind conditions | `fieldwork_jun25_jun26.ipynb`, `fieldwork_oct26.ipynb`, `storm.ipynb`, `longterm.ipynb` |
+| [`hydro/`](hydro/) | Field campaigns (June 2025, June 2026, Oct 2026): waves, water levels, currents, inundation and wave transformation offshore → mudflat; ERA5 storm and long-term wave and wind conditions | `fieldwork_jun25_jun26.ipynb`, `fieldwork_oct26.ipynb`, `storm.ipynb`, `longterm.ipynb` |
 | [`shoreline_monitor/`](shoreline_monitor/) | Shoreline change 1988–2025 per coastal section (A–N) from the Deltares Shoreline Monitor v2.1 | `data_collection.ipynb`, `analysis.ipynb` |
 | [`mangrove_analysis/`](mangrove_analysis/) | Mangrove belt width and seaward mangrove edge 1988–2026 per section, from Landsat and Sentinel-2 (Google Earth Engine) | `mangrove_analysis.ipynb`, `gee_scripts/*.js` |
 | [`delft3d/`](delft3d/) | Post-processing of Delft3D FM and SWAN runs (by ICOE) with and without a breakwater near Nha Mat: flow, waves, residual currents, storm loads | `Delft3D_flow_maps_clean.ipynb` |
+| [`topology/`](topology/) | Cross-shore profile slopes (healthy and unhealthy mangrove, mudflat) and erosional cliffs at Lai Hoa, from RTK-GPS points (Oct 2026) | `topology_analysis.ipynb` |
 | [`sediment/`](sediment/) | Annual longshore sediment transport (Kamphuis, CERC, Van Rijn), rebuilt from Van Rijn's `Littoral.xls` | `annual_longshore_transport.ipynb` |
 
 ## Getting started
@@ -31,12 +32,13 @@ Not all data are in this repository. Some are restricted or too large, and are l
 
 | Folder | Data | Owner / source | In this repository? |
 |---|---|---|---|
-| `hydrology/` | Field data June 2025 and June 2026 | Thuyloi University (collected by Dr. Hoang Tung Dao) | No, restricted |
-| `hydrology/` | Field data October 2026 | Thuyloi University (contact: Dr. P.H. Hung) | No, restricted |
-| `hydrology/` | ERA5 and IBTrACS | Copernicus Climate Change Service; NOAA (open data) | Yes |
+| `hydro/` | Field data June 2025 and June 2026 | Thuyloi University (collected by Dr. Hoang Tung Dao) | No, restricted |
+| `hydro/` | Field data October 2026 | Thuyloi University (contact: Dr. P.H. Hung) | No, restricted |
+| `hydro/` | ERA5 and IBTrACS | Copernicus Climate Change Service; NOAA (open data) | Yes |
 | `shoreline_monitor/` | Shoreline Monitor v2.1 | Deltares | No, downloaded with `data_collection.ipynb` (needs a Deltares SAS token in `.env`) |
 | `mangrove_analysis/` | Google Earth Engine output | Landsat: USGS; Sentinel-2: Copernicus (open data) | Yes (Esri background images are not) |
 | `delft3d/` | Delft3D FM / SWAN model output | ICOE | No, too large and not ours to share |
+| `topology/` | RTK-GPS points Lai Hoa (October 2026) | Collected together with ICOE | No, restricted |
 | `sediment/` | None needed: all input is set in the notebook | n/a | n/a |
 
 The restricted data are not ours to share; ask the owner for access. With data in the same structure, the notebooks can be used to repeat the analysis for new measurements.
