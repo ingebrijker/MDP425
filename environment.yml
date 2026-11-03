@@ -1,0 +1,29 @@
+name: mdp425
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - jupyter
+  - numpy
+  - pandas
+  - scipy           # hydro (peak detection, curve fit), shoreline (Theil–Sen)
+  - matplotlib
+  - jinja2          # formatted tables (sediment)
+  - rasterio        # mangrove
+  - contextily      # mangrove, shoreline (Esri background images)
+  - geopandas       # shoreline
+  - shapely         # shoreline
+  - pyarrow         # shoreline (reading/writing .parquet)
+  - colorcet        # shoreline (section colours)
+  - pystac          # shoreline (Deltares STAC catalogue)
+  - python-dotenv   # shoreline (SAS token from .env)
+  - adlfs           # shoreline (check for new data releases)
+  - xarray          # storm, delft3d
+  - netcdf4         # delft3d
+  - h5netcdf        # storm (IBTrACS), delft3d
+  - h5py            # storm
+  - cfgrib          # storm (GRIB files)
+  - eccodes         # storm (GRIB files)
+  - pip
+  - pip:
+      - coastpy     # shoreline (Deltares Shoreline Monitor data download)

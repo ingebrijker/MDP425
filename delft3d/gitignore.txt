@@ -1,0 +1,12 @@
+# Delft3D/SWAN model output from ICOE: too large and not ours to share
+data/*
+!data/.gitkeep
+
+# Animations (large)
+*.mp4
+*.gif
+
+# System files
+.DS_Store
+desktop.ini
+.ipynb_checkpoints/

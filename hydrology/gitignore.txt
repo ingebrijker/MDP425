@@ -1,0 +1,12 @@
+# Restricted fieldwork data (Dr. Hoang Tung Dao, ICOE): not on GitHub
+data/*
+# Open data for the storm analysis (ERA5, IBTrACS): on GitHub
+!data/data_storm/
+
+# System files
+.DS_Store
+desktop.ini
+.ipynb_checkpoints/
+
+# Raw fieldwork data per sensor
+results/june2025_2026/A*_*.png
