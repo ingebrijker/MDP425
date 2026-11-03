@@ -1,0 +1,22 @@
+# Esri background images: not allowed to share (Esri terms of use).
+# The notebook downloads them again when they are missing.
+*_esri_stack.tif
+
+# GEE exports that the notebook does not use (and that are large)
+*_falsecolour_stack.tif
+*_truecolour_stack.tif
+*_s2_mangrove_stack.tif
+intro_mangrove_2010.tif
+
+# Old Sentinel-2 files from before the calibration
+data/gee_data_landsat/*/*_s2_*
+
+# Copies and system files
+*.zip
+desktop.ini
+.DS_Store
+.ipynb_checkpoints/
+files.txt
+
+# Shapefiles for interventions: not allowed to share, obtain from ICOE.
+data/shapefiles/interventions.*

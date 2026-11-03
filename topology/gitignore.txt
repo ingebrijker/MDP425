@@ -1,0 +1,8 @@
+# RTK-GPS data from the fieldwork with ICOE: not ours to publish
+data/laihoa.csv
+
+# System files
+desktop.ini
+.DS_Store
+.ipynb_checkpoints/
+files.txt

@@ -1,0 +1,5 @@
+sensor,thresholds,points,n,overall_%,ci_low_%,ci_high_%,producers_%,users_%
+landsat,"MVI > 4, NDVI > 0.3",all points,512,95.1,92.9,96.7,91.4,98.7
+landsat,"MVI > 4, NDVI > 0.3",validation half,259,95.8,92.6,97.6,93.2,98.4
+s2,"MVI > 2.75, NDVI > 0.3",all points,512,98.2,96.7,99.1,97.3,99.2
+s2,"MVI > 2.75, NDVI > 0.3",validation half,259,97.7,95.0,98.9,96.2,99.2
