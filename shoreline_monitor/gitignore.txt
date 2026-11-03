@@ -1,0 +1,16 @@
+# Shoreline Monitor data (restricted, Deltares) – never on GitHub
+data/
+*.parquet
+ 
+# Access token (SAS token from Deltares)
+.env
+ 
+# Jupyter and Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+ 
+# System files
+.DS_Store
+Thumbs.db
+ 
