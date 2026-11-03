@@ -35,7 +35,7 @@ Periods are named by their middle year: period 2025 = the dry seasons (Decemberâ
 2. Open `scripts/mangrove_analysis.ipynb` and run all cells.
 
 The figures and tables are saved in `results/figures/` and `results/tables/`. The first run downloads the Esri background images
-(internet needed); they are saved in `data/gee_data_s2/<site>/` and are not part of this repository.
+(internet needed). They are saved in `data/gee_data_s2/<site>/` and are not part of this repository.
 
 ## Make the data again (optional)
 
