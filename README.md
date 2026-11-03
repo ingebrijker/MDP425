@@ -6,7 +6,7 @@ Each folder is a separate analysis with its own README, and the same structure: 
 
 | Folder | What it does | Main notebook(s) |
 |---|---|---|
-| [`hydro/`](hydro/) | Field campaigns (June 2025, June 2026, Oct 2026): waves, water levels, currents, inundation and wave transformation offshore → mudflat; ERA5 storm and long-term wave and wind conditions | `fieldwork_jun25_jun26.ipynb`, `fieldwork_oct26.ipynb`, `storm.ipynb`, `longterm.ipynb` |
+| [`hydrology/`](hydrology/) | Field campaigns (June 2025, June 2026, Oct 2026): waves, water levels, currents, inundation and wave transformation offshore → mudflat; ERA5 storm and long-term wave and wind conditions | `fieldwork_jun25_jun26.ipynb`, `fieldwork_oct26.ipynb`, `storm.ipynb`, `longterm.ipynb` |
 | [`shoreline_monitor/`](shoreline_monitor/) | Shoreline change 1988–2025 per coastal section (A–N) from the Deltares Shoreline Monitor v2.1 | `data_collection.ipynb`, `analysis.ipynb` |
 | [`mangrove_analysis/`](mangrove_analysis/) | Mangrove belt width and seaward mangrove edge 1988–2026 per section, from Landsat and Sentinel-2 (Google Earth Engine) | `mangrove_analysis.ipynb`, `gee_scripts/*.js` |
 | [`delft3d/`](delft3d/) | Post-processing of Delft3D FM and SWAN runs (by ICOE) with and without a breakwater near Nha Mat: flow, waves, residual currents, storm loads | `Delft3D_flow_maps_clean.ipynb` |
@@ -31,9 +31,9 @@ Not all data are in this repository. Some are restricted or too large, and are l
 
 | Folder | Data | Owner / source | In this repository? |
 |---|---|---|---|
-| `hydro/` | Field data June 2025 and June 2026 | Thuyloi University (collected by Dr. Hoang Tung Dao) | No, restricted |
-| `hydro/` | Field data October 2026 | Thuyloi University (contact: Dr. P.H. Hung) | No, restricted |
-| `hydro/` | ERA5 and IBTrACS | Copernicus Climate Change Service; NOAA (open data) | Yes |
+| `hydrology/` | Field data June 2025 and June 2026 | Thuyloi University (collected by Dr. Hoang Tung Dao) | No, restricted |
+| `hydrology/` | Field data October 2026 | Thuyloi University (contact: Dr. P.H. Hung) | No, restricted |
+| `hydrology/` | ERA5 and IBTrACS | Copernicus Climate Change Service; NOAA (open data) | Yes |
 | `shoreline_monitor/` | Shoreline Monitor v2.1 | Deltares | No, downloaded with `data_collection.ipynb` (needs a Deltares SAS token in `.env`) |
 | `mangrove_analysis/` | Google Earth Engine output | Landsat: USGS; Sentinel-2: Copernicus (open data) | Yes (Esri background images are not) |
 | `delft3d/` | Delft3D FM / SWAN model output | ICOE | No, too large and not ours to share |
