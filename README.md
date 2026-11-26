@@ -44,3 +44,7 @@ Not all data are in this repository. Some are restricted or too large, and are l
 The restricted data are not ours to share; ask the owner for access. With data in the same structure, the notebooks can be used to repeat the analysis for new measurements.
 
 See the README in each folder for the input files, settings, assumptions and outputs.folder for the input files, settings, assumptions and outputs.
+
+## Intervention recommendations
+
+The recommendations.md file summarises recommendations based on the findings of this study. It provides guidance for future coastal intervention projects, focusing on sediment system analysis, breakwater design, timing of mangrove planting, hybrid approaches, and long-term monitoring. The recommendations aim to support more effective and sustainable coastal protection and mangrove restoration.
